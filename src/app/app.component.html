@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <hello name="{{ name }}"></hello>
+  <span *ngIf="name ==='vrai'">
+    <button click="details()"><div id="good"></div></button
+  ></span>
+  <span *ngIf="name ==='faux'">
+    <button click="details()"><div id="bad"></div></button
+  ></span>
+
+  <p>
+    <span
+      ><b>
+        Google :
+        <button
+          [ngClass]="(conn.connected$ | async) ? 'success' : 'error'"
+          (click)="details()"
+        ></button>
+      </b>
+    </span>
+  </p>
+</div>
